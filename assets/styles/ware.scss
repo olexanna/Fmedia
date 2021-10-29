@@ -1,0 +1,146 @@
+@import "palette";
+
+.ware{
+	background-color: $bgWare;
+	display: flex;
+	position: relative;
+	padding: 34px 100px 0px 98px;
+	justify-content: space-between;
+	transition: padding 300ms;
+}
+
+
+.card{
+	position: relative;
+	display: flex;
+	flex-basis: 568px;
+	flex-direction: column;
+	flex-shrink: 100;
+	padding-left: 30px;
+
+	&-trait{
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 12px;
+		border-bottom: 1px solid $borderCardTrait;
+	}
+
+	&-title{
+		color: $darkBlueBold;
+		font-size: 33px;
+		position: relative;
+		font-family:"Montserrat-SemiBold";
+		margin-bottom: 6px;
+	}
+
+	&-slogan{
+		color: $darkBlueBold;
+		font-family:"Montserrat-Medium";
+		font-size: 18px;
+		position: relative;
+		margin-bottom: 11px;
+	}
+
+	&-text{
+		color: $darkBlueBold;
+		font-family:"Montserrat-Regular";
+		font-size: 18px;
+		position: relative;
+		margin-bottom: 10px;
+	}
+}
+
+.rating{
+	display: flex;
+	position: relative;
+	margin-bottom: 15px;
+
+	&-stars{/*rating-stars start*/
+		position: relative;
+		display: flex;
+		padding-right: 15px;
+		border-right: 1px solid $darkGrey;
+
+		&-item{
+			position: relative;
+			display: flex;
+
+			&-elem{
+				width: 20px;
+				height: 19px;
+				background-image: url("/assets/images/star.svg");
+				position: relative;
+			}
+		}
+
+		&-sum{
+			color:$darkGrey;
+			font-size: 16px;
+			font-family:"Montserrat-Medium";
+			position: relative;
+			margin-left: 11px;
+		}
+	}/*rating-stars end*/
+
+	&-reviews{
+		position: relative;
+		display: flex;
+		padding: 0px 5px 0px 15px;
+		border-right: 1px solid $darkGrey;
+
+		&-sum{
+			color:$darkGrey;
+			font-size: 16px;
+			font-family:"Montserrat-Medium";
+			position: relative;
+			margin-right: 3px;
+		}
+		&-text{
+			color:$darkGrey;
+			font-size: 16px;
+			font-family:"Montserrat-Medium";
+			position: relative;
+		}
+	}
+
+	&-orders{
+		position: relative;
+		padding: 0px 0px 0px 15px;
+
+		&-sum{
+			color:$darkGrey;
+			font-size: 16px;
+			font-family:"Montserrat-Medium";
+			position: relative;
+		}
+		&-text{
+			color:$darkGrey;
+			font-size: 16px;
+			font-family:"Montserrat-Medium";
+			position: relative;
+		}
+	}
+}
+
+.delivery{
+	display: flex;
+	position: relative;
+
+	&-icon{
+		position: relative;
+		width: 22px;
+		height: 24px;
+		background-image: url("/assets/images/delivery.svg");
+	}
+	&-text{
+		color: $darkBlueBold;
+		font-family:"Montserrat-Medium";
+		font-size: 18px;
+		position: relative;
+		margin-left: 8px;
+	}
+}
+
+
+
+

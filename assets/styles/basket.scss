@@ -1,0 +1,279 @@
+@import "palette";
+
+.basket{
+	display: flex;
+	flex-direction: column;
+	padding: 15px 0px 0px 0px;
+	position: relative;
+
+	&-wrap{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		position: relative;
+	}
+
+	&-left{/*basket-left*/
+		display: flex;
+		flex-direction: column;
+		flex-basis: 277px;
+		position: relative;
+	}/*basket-left*/
+
+	&-right{/*basket-right*/
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		margin-top: 8px;
+	}/*basket-right*/
+
+	&-price-block{
+		position: relative;
+	}
+
+	&-old-price{/*basket-old-price*/
+		display: flex;
+		justify-content: space-between;
+		max-width: 249px;
+		align-items: center;
+		position: relative;
+
+		&-unit{
+			color: $darkGrey;
+			font-size: 24px;
+			font-family: "Montserrat-Medium";
+			text-decoration: line-through $lineThrough;
+			position: relative;
+		}
+	}/*basket-old-price*/
+
+	&-total-price{/*basket-total-price*/
+		color: $darkBlueBold;
+		font-family: "Montserrat-Bold";
+		font-size: 48px;
+		position: relative;
+	}/*basket-total-price*/
+
+	&-btn{
+		background-color: $bgElem;
+		color:$textElem;
+		max-width: 277px;
+		font-size: 18px;
+		font-family: "Montserrat-SemiBold";
+		text-align: center;
+		padding: 22px 0px 19px 0px;
+		cursor: pointer;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+
+		&-title{
+			font-size: 18px;
+			font-family: "Montserrat-SemiBold";
+			text-align: center;
+		}
+		&-sum{
+			font-size: 33px;
+			font-family: "Montserrat-Bold";
+			display: none;
+		}
+		&-old-sum{
+			color: $oldSumBtn;
+			text-decoration: line-through $oldSumBtn;
+			font-size: 24px;
+			font-family: "Montserrat-Medium";
+			display: none;
+		}
+	}
+}
+
+.discount{
+	background-color: $bgElem;
+	color: $textElem;
+	width: 48px;
+	height: 48px;
+	border-radius: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Montserrat-SemiBold";
+	font-size: 16px;
+}
+
+.count{
+	display: flex;
+	align-items: center;
+	margin: 15px 0px 32px 0px;
+	position: relative;
+
+	&-text{
+		color:$darkGrey;
+		font-family: "Montserrat-SemiBold";
+		font-size: 18px;
+		margin-right: 22px;
+		position: relative;
+	}
+
+	&-items{
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		&-btn-left{
+			color: $сountBtnLine;
+			border:1px solid $borderCount;
+			background-color: $bgCountBtn;
+			padding: 8px 15px 9px 18px;
+			border-top-left-radius: 21px;
+			border-bottom-left-radius: 21px;
+			text-shadow: -3px 0px 0px $сountBtnLine;
+			position: relative;
+			cursor: pointer;
+		}
+
+		&-units{
+			color: $сountBtnLine;
+			border-top:1px solid $borderCount;
+			border-bottom:1px solid $borderCount;
+			font-family: "Montserrat-Regular";
+			font-size: 20px;
+			position: relative;
+			padding: 6px 0px 5px 0px;
+			width: 34px;
+			text-align: center;
+		}
+
+		&-btn-right{
+			color: $сountBtnLine;
+			border:1px solid $borderCount;
+			background-color: $bgCountBtn;
+			padding:  8px 14px 9px 15px;
+			border-top-right-radius: 21px;
+			border-bottom-right-radius: 21px;
+			text-shadow: 0px 0px 0px $сountBtnLine;
+			cursor: pointer;
+			position: relative;
+		}
+	}
+
+}
+
+.timer{/*timer*/
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	&-text{/*timer-text*/
+		display: flex;
+		margin-bottom: 8px;
+		position: relative;
+
+		&-icon{
+			width: 16px;
+			height: 16px;
+			background-image: url("/assets/images/timer.svg");
+			position: relative;
+			margin-right: 5px;
+			flex-shrink: 0;
+		}
+		&-title{
+			color: $darkBlueBold;
+			font-size: 14px;
+			font-family: "Montserrat-SemiBold";
+			position: relative;
+		}
+	}/*timer-text*/
+
+	&-display{/*timer-display*/
+		display: flex;
+		justify-content: right;
+		position: relative;
+	}/*timer-display*/
+
+	&-hours{
+		background-color: $bgTimer;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 55px;
+		position: relative;
+
+		&-count{
+			color: $darkBlueBold;
+			font-size: 25px;
+			font-family: "Montserrat-Medium";
+			position: relative;
+		}
+
+		&-text{
+			color: $darkBlueBold;
+			font-size: 12px;
+			font-family: "Montserrat-Regular";
+			position: relative;
+		}
+	}
+
+	&-colon{
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding: 0px 4px;
+		font-weight: bold;
+		font-size: 130%;
+		top: -10px;
+	}
+
+	&-minutes{
+		background-color: $bgTimer;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 55px;
+		position: relative;
+
+		&-count{
+			color: $darkBlueBold;
+			font-size: 25px;
+			font-family: "Montserrat-Medium";
+			position: relative;
+		}
+
+		&-text{
+			color: $darkBlueBold;
+			font-size: 12px;
+			font-family: "Montserrat-Regular";
+			position: relative;
+		}
+	}
+
+	&-seconds{
+		background: $bgTimer;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 55px;
+		position: relative;
+
+		&-count{
+			color: $darkBlueBold;
+			font-size: 25px;
+			font-family: "Montserrat-Medium";
+			position: relative;
+		}
+
+		&-text{
+			color: $darkBlueBold;
+			font-size: 12px;
+			font-family: "Montserrat-Regular";
+			position: relative;
+		}
+	}
+}/*timer*/

@@ -1,0 +1,90 @@
+@import "palette";
+
+.slider{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 612px;
+	margin-right: 10px;
+
+	&-display{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 400px;
+		margin-bottom: 20px;
+
+		&-img{
+			position: relative;
+			height: 100%;
+			width:  100%;
+			box-sizing: border-box;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&-view{/*slider-view start*/
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		&-left{
+			background: $bgSliderBtn;
+			background-image: url("/assets/images/arrow-btn-left.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 39px;
+			height: 39px;
+			border-radius: 100px;
+			cursor: pointer;
+			position: relative;
+		}
+		&-left:hover{
+			background-color: #cccccc;
+			box-shadow: 0px 0px 6px 2px #8b8b8b;
+			transition: 0.15s;
+		}
+
+		&-wrap{/*slider-view-wrap */
+			display: flex;
+			position: relative;
+		}/*slider-view-wrap */
+
+		&-item{/*slider-view-wrap > slider-item*/
+			border: 1px solid $borderSliderPrev;
+			width: 60px;
+			height: 60px;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin-right: 8px;
+			cursor: pointer;
+			position: relative;
+		}/*slider-view-wrap > slider-item*/
+		&-selected{
+			border: 2px solid  $frameAccent;
+		}
+		&-item:first-child{
+			margin-left: 8px;
+		}
+
+		&-right{
+			background: $bgSliderBtn;
+			background-image: url("/assets/images/arrow-btn-right.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 39px;
+			height: 39px;
+			border-radius: 100px;
+			cursor: pointer;
+			position: relative;
+		}
+		&-right:hover{
+			background-color: #cccccc;
+			box-shadow: 0px 0px 6px 2px #8b8b8b;
+			transition: 0.15s;
+		}
+	}/*slider-view end*/
+
+
+}
